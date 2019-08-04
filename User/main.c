@@ -57,7 +57,6 @@ int main(void)
 		OLED_ShowString(0,48,"DIS:");
 		OLED_ShowString(85,48,"cm");
 		Remote_Init();
-//		EXTI_GPIO_Config();
 		HCSR04_Init();
 		TIM1_Configuration();
   	while(1)
@@ -82,9 +81,6 @@ int main(void)
 						flag=0;
 						OLED_ShowString(32,48,"DISABLE  ");
 				}
-//				OLED_DispPolarity(0,32,AnglePidA.Kp);OLED_DispPolarity(42,32,AnglePidA.Ki);OLED_DispPolarity(84,32,AnglePidA.Kd);
-//				OLED_DispPolarity(0,48,SpeedPidA.Kp);OLED_DispPolarity(42,48,SpeedPidA.Ki);OLED_DispPolarity(84,48,SpeedPidA.Kd);
-//				OLED_DispInt(87,16,mpu6050_info.gyro[2]);
 		}
 	  
 }
